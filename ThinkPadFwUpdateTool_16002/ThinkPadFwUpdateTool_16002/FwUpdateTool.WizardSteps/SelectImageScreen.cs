@@ -33,7 +33,8 @@ namespace FwUpdateTool.WizardSteps
 		public SelectImageScreen()
 		{
 			InitializeComponent();
-		}
+            InitializeComponentsCustom();
+        }
 
 		private void BrowseButton_Click(object sender, RoutedEventArgs e)
 		{
@@ -67,7 +68,7 @@ namespace FwUpdateTool.WizardSteps
 
 		[DebuggerNonUserCode]
 		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		public void InitializeComponent()
+		public void InitializeComponentsCustom()
 		{
 			if (!_contentLoaded)
 			{

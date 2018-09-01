@@ -178,6 +178,7 @@ namespace FwUpdateTool
 			try
 			{
 				InitializeComponent();
+                InitializeComponentsCustom();
                 List<SdkTbtController> list = LoadControllers().Values.ToList();
 				List<SdkTbtDevice> devices = LoadDevices().Values.ToList();
 				BuildWizard(list, devices);
@@ -605,7 +606,7 @@ namespace FwUpdateTool
 
 		[DebuggerNonUserCode]
 		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		public void InitializeComponent()
+		public void InitializeComponentsCustom()
 		{
 			if (!_contentLoaded)
 			{

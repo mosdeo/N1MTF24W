@@ -28,7 +28,8 @@ namespace FwUpdateTool.WizardSteps
 		public WelcomeScreen()
 		{
 			InitializeComponent();
-		}
+            InitializeComponentsCustom();
+        }
 
 		public void OnPropertyChanged(string name)
 		{
@@ -44,7 +45,7 @@ namespace FwUpdateTool.WizardSteps
 
 		[DebuggerNonUserCode]
 		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		public void InitializeComponent()
+		public void InitializeComponentsCustom()
 		{
 			if (!_contentLoaded)
 			{

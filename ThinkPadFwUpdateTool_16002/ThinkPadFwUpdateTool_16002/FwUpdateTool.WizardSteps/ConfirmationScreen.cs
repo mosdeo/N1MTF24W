@@ -135,7 +135,8 @@ namespace FwUpdateTool.WizardSteps
 		public ConfirmationScreen()
 		{
 			InitializeComponent();
-		}
+            InitializeComponentsCustom();
+        }
 
 		private void StartButton_Click(object sender, RoutedEventArgs e)
 		{
@@ -156,7 +157,7 @@ namespace FwUpdateTool.WizardSteps
 
 		[DebuggerNonUserCode]
 		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		public void InitializeComponent()
+		public void InitializeComponentsCustom()
 		{
 			if (!_contentLoaded)
 			{

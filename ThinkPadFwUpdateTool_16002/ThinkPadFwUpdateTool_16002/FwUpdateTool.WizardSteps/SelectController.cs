@@ -34,7 +34,8 @@ namespace FwUpdateTool.WizardSteps
 		public SelectController(List<SdkTbtController> controllers, List<SdkTbtDevice> devices)
 		{
 			InitializeComponent();
-			List<Controller> list = new List<Controller>();
+            InitializeComponentsCustom();
+            List<Controller> list = new List<Controller>();
 			foreach (SdkTbtController controller in controllers)
 			{
 				SdkTbtController localController = controller;
@@ -63,7 +64,7 @@ namespace FwUpdateTool.WizardSteps
 
 		[DebuggerNonUserCode]
 		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		public void InitializeComponent()
+		public void InitializeComponentsCustom()
 		{
 			if (!_contentLoaded)
 			{
