@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="DeprecatedMethod"><value>The command is deprecated</value></data>
+  <data name="LoadControllersFailed"><value>Failed to load Thunderbolt(TM) controllers through WMI.</value></data>
+  <data name="MaskIsntSupported"><value>Mask isn't supported for data with length &gt; 1.</value></data>
+  <data name="PdMismatchError"><value>The controller and the file differ regarding PD existence (one of them has it and one doesn't)</value></data>
+  <data name="HostNeedsPowerDownMessage"><value>The new PD version on your machine is different from the previous PD version. In order to complete the upgrade you must put your computer in G3 mode (shut down completely and unplug).</value></data>
+  <data name="I2CAccessNotSupported"><value>I2C access is not supported</value></data>
+  <data name="DromNotFound"><value>No DROM found</value></data>
+  <data name="RedwoodNotSupported"><value>DSL4000 series controllers are not supported by this firmware update tool</value></data>
+  <data name="ReadFirmwareFailed"><value>ReadFirmware function failed</value></data>
+  <data name="NoControllerStringPart0"><value>No active Thunderbolt(TM) controller found in the system</value></data>
+  <data name="IncompatiblePortCount"><value>Firmware image file is not compatible with controller port count</value></data>
+  <data name="NoMatchingDeviceFound"><value>No matching devices found</value></data>
+  <data name="GetPdVersionFailed"><value>Error while getting the PD firmware version</value></data>
+  <data name="LoadDevicesFailed"><value>Failed to load Thunderbolt(TM) devices through WMI.</value></data>
+  <data name="UnknownChip"><value>Unknown Thunderbolt(TM) chip.</value></data>
+  <data name="ReadI2CFailed"><value>Error while reading an I2C register</value></data>
+  <data name="MessageBoxCaption"><value>Thunderbolt(TM) Firmware Update Utility</value></data>
+  <data name="OutOfControllerSection"><value>Requested property is out of controller section; probably an issue with the tool.</value></data>
+  <data name="OutOfFileSection"><value>Requested property is out of file section; probably a corrupted or incompatible file.</value></data>
+  <data name="NoDeviceStringPart1"><value>or Thunderbolt(TM) software is not present in the system.
+Make sure you have Thunderbolt(TM) software installed.</value></data>
+  <data name="ChipSizeError"><value>Image file doesn't fit into chip size.</value></data>
+  <data name="NoDromWarning"><value>Warning: no DROM existing (no vendor/model check)</value></data>
+  <data name="ValidationFailedPart2"><value>Please supply a valid image file.</value></data>
+  <data name="ValidationFailedPart1"><value>Firmware image does not match current hardware: </value></data>
+  <data name="NativeModeMismatch"><value>Native/BIOS-Assisted mode mismatch between the controller and the image file</value></data>
+  <data name="NoDromInFileError"><value>The file doesn't include DROM section</value></data>
+  <data name="DeviceNeedsPowerDownMessage"><value>The new PD version on your device controller is different from the previous PD version. In order to complete the upgrade you must disconnect and unplug the device.</value></data>
+  <data name="FileNotExists"><value>File does not exist.</value></data>
+  <data name="GetFirmwareVersionFailed"><value>Error while getting the firmware version</value></data>
+  <data name="CommandTableError"><value>Error in command finding (probably an error in command table)</value></data>
+  <data name="CommandNotSupportedOnDevice"><value>Command is not supported on devices</value></data>
+  <data name="InvalidControllerID"><value>The provided controller ID is invalid.</value></data>
+  <data name="NoHWInfo"><value>Hardware information is not available</value></data>
+  <data name="FWUpdateFailedMessage"><value>Firmware update failed.</value></data>
+  <data name="CloseDuringUpdate"><value>Please wait for firmware update process to complete.</value></data>
+  <data name="InvalidImageFile"><value>Selected file is invalid.
+Please select a valid image file.</value></data>
+  <data name="ImageForDeviceError"><value>The image file is for device controller</value></data>
+  <data name="ImageForHostError"><value>The image file is for host controller</value></data>
+  <data name="NoCommandSupplied"><value>No command supplied</value></data>
+  <data name="MultipleImagesFound"><value>Multiple files found</value></data>
+  <data name="MinimalValidationInSafeMode"><value>Only minimal validation was done to the image file because the controller is in safe mode</value></data>
+  <data name="DromMismatchError"><value>The controller and the file differ regarding DROM existence (one of them has it and one doesn't)</value></data>
+  <data name="InvalidDeviceUUID"><value>The provided device UUID is invalid.</value></data>
+  <data name="IncorrectArgumentCount"><value>Wrong number of arguments for this command</value></data>
+  <data name="SafeModeError"><value>This command is not supported on controller in safe mode</value></data>
+  <data name="CommandNotFound"><value>Command not found</value></data>
+  <data name="VendorMismatchError"><value>The image file is for another vendor product</value></data>
+  <data name="DeviceNotSupported"><value>This device doesn't support device firmware update</value></data>
+  <data name="SafeModeWarning"><value>Not all Thunderbolt(TM) ports are functioning properly.
+Some controller's information is not available.</value></data>
+  <data name="InvalidArgument"><value>One or more of the provided arguments are invalid</value></data>
+  <data name="IncompatibleHWGeneration"><value>Firmware image file is not compatible with controller hardware generation</value></data>
+  <data name="WriteI2CFailed"><value>Error while writing to an I2C register</value></data>
+  <data name="ServiceDoesntExist"><value>Thunderbolt(TM) service doesn't exist</value></data>
+  <data name="ModelMismatchError"><value>The image file is for another product model</value></data>
+  <data name="FWUpdateSuccessMessage"><value>Firmware was updated successfully.</value></data>
+  <data name="SWNotInstalled"><value>Thunderbolt(TM) software is not installed.
+Please install the Thunderbolt(TM) software and run the tool again.</value></data>
+  <data name="NoDeviceStringPart2GUI"><value>Then connect Thunderbolt(TM) device and press OK to retry or press Cancel to abort firmware update process.</value></data>
+  <data name="NoDeviceStringPart2CMD"><value>Then connect Thunderbolt(TM) device and retry.</value></data>
+  <data name="NoEPStringPart0"><value>There is no usable Thunderbolt(TM) device connected to the system</value></data>
+  <data name="EPUpdateNotSupported"><value>This controller doesn't support device firmware update</value></data>
+  <data name="NoEPUpdateSupport"><value>This controller doesn't support device firmware update</value></data>
+  </root>
