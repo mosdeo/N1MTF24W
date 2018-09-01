@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FwUpdateAPI", "FwUpdateAPI\FwUpdateAPI.csproj", "{571F4087-06AA-497E-887B-402E4EA9AA92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FwUpdateTool", "ThinkPadFwUpdateTool_16002\FwUpdateTool.csproj", "{B6EBFE63-DE84-453E-86DF-06BB6177A743}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{571F4087-06AA-497E-887B-402E4EA9AA92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571F4087-06AA-497E-887B-402E4EA9AA92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571F4087-06AA-497E-887B-402E4EA9AA92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571F4087-06AA-497E-887B-402E4EA9AA92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EBFE63-DE84-453E-86DF-06BB6177A743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EBFE63-DE84-453E-86DF-06BB6177A743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EBFE63-DE84-453E-86DF-06BB6177A743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EBFE63-DE84-453E-86DF-06BB6177A743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
