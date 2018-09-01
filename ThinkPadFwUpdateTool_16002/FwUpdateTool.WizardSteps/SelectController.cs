@@ -15,7 +15,7 @@ namespace FwUpdateTool.WizardSteps
 	{
 		internal TreeView DevicesTree;
 
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public bool CancelButtonActive => true;
 

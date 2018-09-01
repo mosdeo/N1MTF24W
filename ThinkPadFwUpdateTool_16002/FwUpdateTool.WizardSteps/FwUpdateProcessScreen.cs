@@ -18,7 +18,7 @@ namespace FwUpdateTool.WizardSteps
 
 		internal Image Logo;
 
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public bool CancelButtonActive => false;
 

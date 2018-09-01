@@ -15,7 +15,7 @@ namespace FwUpdateTool.WizardSteps
 
 		internal TextBox FilePath;
 
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public bool CancelButtonActive => true;
 

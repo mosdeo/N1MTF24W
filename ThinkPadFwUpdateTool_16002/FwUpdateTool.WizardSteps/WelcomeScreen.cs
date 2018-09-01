@@ -10,7 +10,7 @@ namespace FwUpdateTool.WizardSteps
 {
 	public partial class WelcomeScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public bool CancelButtonActive => true;
 

@@ -26,7 +26,7 @@ namespace FwUpdateTool.WizardSteps
 
 		internal Button StartButton;
 
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public bool IsHost
 		{

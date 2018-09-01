@@ -12,7 +12,7 @@ namespace FwUpdateTool.WizardSteps
 	{
 		internal TextBlock ResultMessage;
 
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public bool CancelButtonActive => false;
 
