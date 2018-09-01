@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="FwUpdateTool.WizardSteps.FwUpdateProcessScreen" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+  <UserControl.Resources>
+    <BooleanToVisibilityConverter x:Key="BooleanToVis" />
+  </UserControl.Resources>
+  <Grid>
+    <Image Name="Logo" Margin="75" Source="/FwUpdateTool;component/Resources/thunderbolt_logo.png" />
+    <Label Content="Flashing firmware image. &#xD;&#xA;This may take up to 3 minutes..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
+    <ProgressBar Height="15" Margin="15,246,15,0" VerticalAlignment="Top" Foreground="#FF62B0FD" Maximum="100" Value="{Binding Path=Progress}" Visibility="{Binding Path=Registered, Converter={StaticResource BooleanToVis}}" />
+    <Label ContentStringFormat="{}{0}%" Margin="0,214,0,0" VerticalAlignment="Top" Height="27" HorizontalAlignment="Center" Width="45" Content="{Binding Path=Progress, Mode=OneWay}" Visibility="{Binding Path=Registered, Converter={StaticResource BooleanToVis}}" />
+  </Grid>
+</UserControl>

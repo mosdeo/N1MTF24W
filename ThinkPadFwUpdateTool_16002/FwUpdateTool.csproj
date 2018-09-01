@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B6EBFE63-DE84-453E-86DF-06BB6177A743}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>FwUpdateTool</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="FwUpdateAPI">
+      <HintPath>C:\Users\mosde\Desktop\TB3_Firmware_Update\ThunderboltFW\FwUpdateAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Battery\BatteryChargeStatus.cs" />
+    <Compile Include="Battery\PowerLineStatus.cs" />
+    <Compile Include="Battery\PowerStatus.cs" />
+    <Compile Include="FwUpdateTool.Properties\Resources.cs" />
+    <Compile Include="FwUpdateTool.Properties\Settings.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\ConfirmationScreen.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\Controller.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\Device.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\FwUpdateProcessScreen.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\ISdk.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\Port.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\SelectController.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\SelectImageScreen.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\UpdateCompletedScreen.cs" />
+    <Compile Include="FwUpdateTool.WizardSteps\WelcomeScreen.cs" />
+    <Compile Include="FwUpdateTool\App.cs" />
+    <Compile Include="FwUpdateTool\BoolToStringConverter.cs" />
+    <Compile Include="FwUpdateTool\BoolToVisibilityConverter.cs" />
+    <Compile Include="FwUpdateTool\IWizardScreen.cs" />
+    <Compile Include="FwUpdateTool\MainWindow.cs" />
+    <Compile Include="FwUpdateTool\Silent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TBT_Control\TBT_SCRQ.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\resources\thunderbolt_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\mainwindow.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\confirmationscreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\fwupdateprocessscreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\selectcontroller.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\selectimagescreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\updatecompletedscreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\welcomescreen.xaml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
