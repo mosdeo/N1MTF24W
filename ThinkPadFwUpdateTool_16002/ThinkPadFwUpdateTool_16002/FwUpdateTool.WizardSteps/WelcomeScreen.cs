@@ -55,12 +55,12 @@ namespace FwUpdateTool.WizardSteps
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			_contentLoaded = true;
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	_contentLoaded = true;
+		//}
 	}
 }

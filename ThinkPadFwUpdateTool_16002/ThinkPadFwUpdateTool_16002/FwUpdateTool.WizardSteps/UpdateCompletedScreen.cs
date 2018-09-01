@@ -10,7 +10,7 @@ namespace FwUpdateTool.WizardSteps
 {
 	public partial class UpdateCompletedScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
-		internal TextBlock ResultMessage;
+		//internal TextBlock ResultMessage;
 
 		//private bool _contentLoaded;
 
@@ -57,19 +57,19 @@ namespace FwUpdateTool.WizardSteps
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			if (connectionId == 1)
-			{
-				ResultMessage = (TextBlock)target;
-			}
-			else
-			{
-				_contentLoaded = true;
-			}
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	if (connectionId == 1)
+		//	{
+		//		ResultMessage = (TextBlock)target;
+		//	}
+		//	else
+		//	{
+		//		_contentLoaded = true;
+		//	}
+		//}
 	}
 }

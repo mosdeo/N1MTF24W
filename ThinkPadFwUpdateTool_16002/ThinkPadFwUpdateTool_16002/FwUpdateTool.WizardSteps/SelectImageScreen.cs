@@ -11,9 +11,9 @@ namespace FwUpdateTool.WizardSteps
 {
 	public partial class SelectImageScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
-		internal Button BrowseButton;
+		//internal Button BrowseButton;
 
-		internal TextBox FilePath;
+		//internal TextBox FilePath;
 
 		//private bool _contentLoaded;
 
@@ -78,25 +78,25 @@ namespace FwUpdateTool.WizardSteps
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			switch (connectionId)
-			{
-			case 1:
-				BrowseButton = (Button)target;
-				BrowseButton.Click += BrowseButton_Click;
-				break;
-			case 2:
-				FilePath = (TextBox)target;
-				FilePath.TextChanged += OnContentChanged;
-				break;
-			default:
-				_contentLoaded = true;
-				break;
-			}
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	switch (connectionId)
+		//	{
+		//	case 1:
+		//		BrowseButton = (Button)target;
+		//		BrowseButton.Click += BrowseButton_Click;
+		//		break;
+		//	case 2:
+		//		FilePath = (TextBox)target;
+		//		FilePath.TextChanged += OnContentChanged;
+		//		break;
+		//	default:
+		//		_contentLoaded = true;
+		//		break;
+		//	}
+		//}
 	}
 }

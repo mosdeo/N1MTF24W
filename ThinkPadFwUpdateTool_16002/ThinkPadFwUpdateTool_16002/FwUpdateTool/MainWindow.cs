@@ -43,17 +43,17 @@ namespace FwUpdateTool
 
 		public string FileName;
 
-		internal System.Windows.Controls.Button CancelButton;
+		//internal System.Windows.Controls.Button CancelButton;
 
-		internal System.Windows.Controls.Button NextButton;
+		//internal System.Windows.Controls.Button NextButton;
 
-		internal System.Windows.Controls.Button BackButton;
+		//internal System.Windows.Controls.Button BackButton;
 
-		internal ContentControl PageContent;
+		//internal ContentControl PageContent;
 
-		internal StackPanel Steps;
+		//internal StackPanel Steps;
 
-		private bool _contentLoaded;
+		//private bool _contentLoaded;
 
 		public string ImageFileName
 		{
@@ -616,38 +616,38 @@ namespace FwUpdateTool
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			switch (connectionId)
-			{
-			case 1:
-				((MainWindow)target).Closing += MainWindow_OnClosing;
-				break;
-			case 2:
-				CancelButton = (System.Windows.Controls.Button)target;
-				CancelButton.Click += CancelButton_Click;
-				break;
-			case 3:
-				NextButton = (System.Windows.Controls.Button)target;
-				NextButton.Click += NextButton_Click;
-				break;
-			case 4:
-				BackButton = (System.Windows.Controls.Button)target;
-				BackButton.Click += BackButton_Click;
-				break;
-			case 5:
-				PageContent = (ContentControl)target;
-				break;
-			case 6:
-				Steps = (StackPanel)target;
-				break;
-			default:
-				_contentLoaded = true;
-				break;
-			}
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	switch (connectionId)
+		//	{
+		//	case 1:
+		//		((MainWindow)target).Closing += MainWindow_OnClosing;
+		//		break;
+		//	case 2:
+		//		CancelButton = (System.Windows.Controls.Button)target;
+		//		CancelButton.Click += CancelButton_Click;
+		//		break;
+		//	case 3:
+		//		NextButton = (System.Windows.Controls.Button)target;
+		//		NextButton.Click += NextButton_Click;
+		//		break;
+		//	case 4:
+		//		BackButton = (System.Windows.Controls.Button)target;
+		//		BackButton.Click += BackButton_Click;
+		//		break;
+		//	case 5:
+		//		PageContent = (ContentControl)target;
+		//		break;
+		//	case 6:
+		//		Steps = (StackPanel)target;
+		//		break;
+		//	default:
+		//		_contentLoaded = true;
+		//		break;
+		//	}
+		//}
 	}
 }

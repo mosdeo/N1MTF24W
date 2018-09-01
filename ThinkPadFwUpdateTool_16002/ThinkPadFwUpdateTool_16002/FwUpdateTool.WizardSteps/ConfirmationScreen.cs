@@ -24,7 +24,7 @@ namespace FwUpdateTool.WizardSteps
 
 		private bool _osNativePciEnumerationFile;
 
-		internal Button StartButton;
+		//internal Button StartButton;
 
 		//private bool _contentLoaded;
 
@@ -167,27 +167,27 @@ namespace FwUpdateTool.WizardSteps
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		internal Delegate _CreateDelegate(Type delegateType, string handler)
-		{
-			return Delegate.CreateDelegate(delegateType, this, handler);
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//internal Delegate _CreateDelegate(Type delegateType, string handler)
+		//{
+		//	return Delegate.CreateDelegate(delegateType, this, handler);
+		//}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			if (connectionId == 1)
-			{
-				StartButton = (Button)target;
-				StartButton.Click += StartButton_Click;
-			}
-			else
-			{
-				_contentLoaded = true;
-			}
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	if (connectionId == 1)
+		//	{
+		//		StartButton = (Button)target;
+		//		StartButton.Click += StartButton_Click;
+		//	}
+		//	else
+		//	{
+		//		_contentLoaded = true;
+		//	}
+		//}
 	}
 }

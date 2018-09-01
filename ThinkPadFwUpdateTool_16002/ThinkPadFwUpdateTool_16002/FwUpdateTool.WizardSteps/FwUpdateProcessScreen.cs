@@ -16,7 +16,7 @@ namespace FwUpdateTool.WizardSteps
 
 		private readonly FlashProgress _flashProgress = new FlashProgress();
 
-		internal Image Logo;
+		//internal Image Logo;
 
 		//private bool _contentLoaded;
 
@@ -82,19 +82,19 @@ namespace FwUpdateTool.WizardSteps
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			if (connectionId == 1)
-			{
-				Logo = (Image)target;
-			}
-			else
-			{
-				_contentLoaded = true;
-			}
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	if (connectionId == 1)
+		//	{
+		//		Logo = (Image)target;
+		//	}
+		//	else
+		//	{
+		//		_contentLoaded = true;
+		//	}
+		//}
 	}
 }

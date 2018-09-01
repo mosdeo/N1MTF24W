@@ -13,7 +13,7 @@ namespace FwUpdateTool.WizardSteps
 {
 	public partial class SelectController : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
-		internal TreeView DevicesTree;
+		//internal TreeView DevicesTree;
 
 		//private bool _contentLoaded;
 
@@ -74,20 +74,20 @@ namespace FwUpdateTool.WizardSteps
 			}
 		}
 
-		[DebuggerNonUserCode]
-		[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
-		[EditorBrowsable(EditorBrowsableState.Never)]
-		void IComponentConnector.Connect(int connectionId, object target)
-		{
-			if (connectionId == 1)
-			{
-				DevicesTree = (TreeView)target;
-				DevicesTree.SelectedItemChanged += OnSelectedItemChanged;
-			}
-			else
-			{
-				_contentLoaded = true;
-			}
-		}
+		//[DebuggerNonUserCode]
+		//[GeneratedCode("PresentationBuildTasks", "4.0.0.0")]
+		//[EditorBrowsable(EditorBrowsableState.Never)]
+		//void IComponentConnector.Connect(int connectionId, object target)
+		//{
+		//	if (connectionId == 1)
+		//	{
+		//		DevicesTree = (TreeView)target;
+		//		DevicesTree.SelectedItemChanged += OnSelectedItemChanged;
+		//	}
+		//	else
+		//	{
+		//		_contentLoaded = true;
+		//	}
+		//}
 	}
 }
