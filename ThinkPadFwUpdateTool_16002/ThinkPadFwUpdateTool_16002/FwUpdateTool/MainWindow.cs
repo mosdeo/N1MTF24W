@@ -178,7 +178,7 @@ namespace FwUpdateTool
 			try
 			{
 				InitializeComponent();
-				List<SdkTbtController> list = LoadControllers().Values.ToList();
+                List<SdkTbtController> list = LoadControllers().Values.ToList();
 				List<SdkTbtDevice> devices = LoadDevices().Values.ToList();
 				BuildWizard(list, devices);
 				CurrentController = list.First();

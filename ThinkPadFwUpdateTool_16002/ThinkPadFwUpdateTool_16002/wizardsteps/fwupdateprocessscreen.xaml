@@ -4,7 +4,7 @@
     <BooleanToVisibilityConverter x:Key="BooleanToVis" />
   </UserControl.Resources>
   <Grid>
-    <Image Name="Logo" Margin="75" Source="/FwUpdateTool;component/Resources/thunderbolt_logo.png" />
+        <Image Name="Logo" Margin="75" Source="/FwUpdateTool;component/ThinkPadFwUpdateTool_16002/Resources/thunderbolt_logo.png" />
     <Label Content="Flashing firmware image. &#xD;&#xA;This may take up to 3 minutes..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
     <ProgressBar Height="15" Margin="15,246,15,0" VerticalAlignment="Top" Foreground="#FF62B0FD" Maximum="100" Value="{Binding Path=Progress}" Visibility="{Binding Path=Registered, Converter={StaticResource BooleanToVis}}" />
     <Label ContentStringFormat="{}{0}%" Margin="0,214,0,0" VerticalAlignment="Top" Height="27" HorizontalAlignment="Center" Width="45" Content="{Binding Path=Progress, Mode=OneWay}" Visibility="{Binding Path=Registered, Converter={StaticResource BooleanToVis}}" />

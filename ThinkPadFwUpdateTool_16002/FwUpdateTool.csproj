@@ -1,15 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{B6EBFE63-DE84-453E-86DF-06BB6177A743}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AssemblyName>FwUpdateTool</AssemblyName>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -29,8 +45,16 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>..\bin\Debug\</OutputPath>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FwUpdateAPI, Version=16.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\FwUpdateAPI.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework">
       <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll</HintPath>
     </Reference>
@@ -42,9 +66,6 @@
     </Reference>
     <Reference Include="System.Xaml">
       <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll</HintPath>
-    </Reference>
-    <Reference Include="FwUpdateAPI">
-      <HintPath>C:\Users\mosde\Desktop\TB3_Firmware_Update\ThunderboltFW\FwUpdateAPI.dll</HintPath>
     </Reference>
     <Reference Include="System.Management">
       <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
@@ -63,43 +84,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Battery\BatteryChargeStatus.cs" />
-    <Compile Include="Battery\PowerLineStatus.cs" />
-    <Compile Include="Battery\PowerStatus.cs" />
-    <Compile Include="FwUpdateTool.Properties\Resources.cs" />
-    <Compile Include="FwUpdateTool.Properties\Settings.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\ConfirmationScreen.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\Controller.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\Device.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\FwUpdateProcessScreen.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\ISdk.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\Port.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\SelectController.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\SelectImageScreen.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\UpdateCompletedScreen.cs" />
-    <Compile Include="FwUpdateTool.WizardSteps\WelcomeScreen.cs" />
-    <Compile Include="FwUpdateTool\App.cs" />
-    <Compile Include="FwUpdateTool\BoolToStringConverter.cs" />
-    <Compile Include="FwUpdateTool\BoolToVisibilityConverter.cs" />
-    <Compile Include="FwUpdateTool\IWizardScreen.cs" />
-    <Compile Include="FwUpdateTool\MainWindow.cs" />
-    <Compile Include="FwUpdateTool\Silent.cs">
+    <Compile Include="ThinkPadFwUpdateTool_16002\Battery\BatteryChargeStatus.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\Battery\PowerLineStatus.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\Battery\PowerStatus.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.Properties\Resources.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.Properties\Settings.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\ConfirmationScreen.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\Controller.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\Device.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\FwUpdateProcessScreen.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\ISdk.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\Port.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\SelectController.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\SelectImageScreen.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\UpdateCompletedScreen.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool.WizardSteps\WelcomeScreen.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool\App.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool\BoolToStringConverter.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool\BoolToVisibilityConverter.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool\IWizardScreen.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool\MainWindow.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\FwUpdateTool\Silent.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TBT_Control\TBT_SCRQ.cs" />
+    <Compile Include="ThinkPadFwUpdateTool_16002\TBT_Control\TBT_SCRQ.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\resources\thunderbolt_logo.png" />
+    <EmbeddedResource Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\resources\thunderbolt_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\mainwindow.xaml" />
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\confirmationscreen.xaml" />
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\fwupdateprocessscreen.xaml" />
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\selectcontroller.xaml" />
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\selectimagescreen.xaml" />
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\updatecompletedscreen.xaml" />
-    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\wizardsteps\welcomescreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\mainwindow.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\wizardsteps\confirmationscreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\wizardsteps\fwupdateprocessscreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\wizardsteps\selectcontroller.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\wizardsteps\selectimagescreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\wizardsteps\updatecompletedscreen.xaml" />
+    <Page Include="C:\Users\mosde\Documents\Visual Studio 2017\Projects\N1MTF24W\ThinkPadFwUpdateTool_16002\ThinkPadFwUpdateTool_16002\wizardsteps\welcomescreen.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

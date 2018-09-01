@@ -10,7 +10,7 @@ using System.Windows.Media.Animation;
 
 namespace FwUpdateTool.WizardSteps
 {
-	public class FwUpdateProcessScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IDisposable, IComponentConnector
+	public partial class FwUpdateProcessScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IDisposable, IComponentConnector
 	{
 		private readonly DoubleAnimation _ani = new DoubleAnimation(1.0, 0.3, TimeSpan.FromMilliseconds(1000.0));
 
