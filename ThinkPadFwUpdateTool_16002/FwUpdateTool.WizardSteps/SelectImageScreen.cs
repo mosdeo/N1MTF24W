@@ -9,7 +9,7 @@ using System.Windows.Markup;
 
 namespace FwUpdateTool.WizardSteps
 {
-	public class SelectImageScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
+	public partial class SelectImageScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
 		internal Button BrowseButton;
 

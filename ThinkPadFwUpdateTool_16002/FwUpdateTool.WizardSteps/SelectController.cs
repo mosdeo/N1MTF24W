@@ -11,7 +11,7 @@ using System.Windows.Markup;
 
 namespace FwUpdateTool.WizardSteps
 {
-	public class SelectController : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
+	public partial class SelectController : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
 		internal TreeView DevicesTree;
 

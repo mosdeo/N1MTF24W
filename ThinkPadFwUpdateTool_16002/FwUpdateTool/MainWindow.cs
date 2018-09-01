@@ -19,7 +19,7 @@ using TBT_Control;
 
 namespace FwUpdateTool
 {
-	public class MainWindow : Window, INotifyPropertyChanged, IComponentConnector
+	public partial class MainWindow : Window, INotifyPropertyChanged, IComponentConnector
 	{
 		private class InitException : Exception
 		{

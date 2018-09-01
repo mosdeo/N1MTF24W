@@ -8,7 +8,7 @@ using System.Windows.Markup;
 
 namespace FwUpdateTool.WizardSteps
 {
-	public class WelcomeScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
+	public partial class WelcomeScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
 		private bool _contentLoaded;
 

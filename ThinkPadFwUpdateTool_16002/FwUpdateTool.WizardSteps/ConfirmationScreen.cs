@@ -8,7 +8,7 @@ using System.Windows.Markup;
 
 namespace FwUpdateTool.WizardSteps
 {
-	public class ConfirmationScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
+	public partial class ConfirmationScreen : UserControl, IWizardScreen, INotifyPropertyChanged, IComponentConnector
 	{
 		private bool _isHost;
 
